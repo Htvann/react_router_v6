@@ -1,22 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import MainRoutes from './Routes'
-import Sidebar from './components/Sidebar'
+import MainRoutes from "./Routes";
+import Sidebar from "./components/Sidebar";
 
+import "./styles.css";
 
-import './styles.css'
+const App = () => {
+   return (
+      <div className="app">
+         {/** Sidebar */}
+         <Sidebar />
 
-function App() {
-  return (
-    <div className="app">
-     
-     {/** Sidebar */}
-     <Sidebar/>
-
-     {/** Inner container */}
-    <MainRoutes/>
-    </div>
-  );
-}
+         {/** Inner container */}
+         <MainRoutes />
+      </div>
+   );
+};
 
 export default App;
